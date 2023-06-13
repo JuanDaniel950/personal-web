@@ -29,13 +29,32 @@ export const About = () => {
 					<div className="about__skills grid">
 						<div className="skills__data">
 							<div className="skills__titles">
-								<div className="skills_name">
-									<div className="skills_number"></div>
-								</div>
+								<h3 className="skills_name">Desarrollo WEB</h3>
+									<span className="skills_number development">90%</span>
 							</div>
 
 							<div className="skills__bar">
-								<span className="skills_percentage">90%</span>
+								<span className="skills_percentage"></span>
+							</div>
+						</div>
+						<div className="skills__data">
+							<div className="skills__titles">
+								<h3 className="skills_name">UX/UI</h3>
+									<span className="skills_number development">80%</span>
+							</div>
+
+							<div className="skills__bar">
+								<span className="skills_percentage ui_desing"></span>
+							</div>
+						</div>
+						<div className="skills__data">
+							<div className="skills__titles">
+								<h3 className="skills_name">Desarrollo Móvil</h3>
+									<span className="skills_number development">90%</span>
+							</div>
+
+							<div className="skills__bar">
+								<span className="skills_percentage ui_desing"></span>
 							</div>
 						</div>
 					</div>
