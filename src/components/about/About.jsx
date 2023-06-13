@@ -28,33 +28,33 @@ export const About = () => {
 					</div>
 					<div className="about__skills grid">
 						<div className="skills__data">
-							<div className="skills__titles">
-								<h3 className="skills_name">Desarrollo WEB</h3>
-									<span className="skills_number development">90%</span>
+							<div className="skills__title">
+								<h3 className="skills__name">Desarrollo WEB</h3>
+									<span className="skills_number">90%</span>
 							</div>
 
 							<div className="skills__bar">
-								<span className="skills_percentage"></span>
+								<span className="skills__percentage development"></span>
 							</div>
 						</div>
 						<div className="skills__data">
-							<div className="skills__titles">
-								<h3 className="skills_name">UX/UI</h3>
-									<span className="skills_number development">80%</span>
+							<div className="skills__title">
+								<h3 className="skills__name">UX/UI</h3>
+									<span className="skills_number ui">80%</span>
 							</div>
 
 							<div className="skills__bar">
-								<span className="skills_percentage ui_desing"></span>
+								<span className="skills__percentage ui_desing"></span>
 							</div>
 						</div>
 						<div className="skills__data">
-							<div className="skills__titles">
-								<h3 className="skills_name">Desarrollo Móvil</h3>
-									<span className="skills_number development">90%</span>
+							<div className="skills__title">
+								<h3 className="skills__name">Desarrollo Móvil</h3>
+									<span className="skills_number development_movil">90%</span>
 							</div>
 
 							<div className="skills__bar">
-								<span className="skills_percentage ui_desing"></span>
+								<span className="skills__percentage dev_mobile"></span>
 							</div>
 						</div>
 					</div>
