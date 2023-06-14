@@ -1,7 +1,7 @@
 //import React from 'react'
 import "./about.css";
 import ImgMe from "../../assets/avatar-2.svg";
-
+import Aboutbox from "./Aboutbox";
 export const About = () => {
 	return (
 		<section className="about container section" id="about">
@@ -60,6 +60,7 @@ export const About = () => {
 					</div>
 				</div>
 			</div>
+			<Aboutbox />
 		</section>
 	);
 };
