@@ -28,7 +28,8 @@ export const Resume = () => {
                 <Card key={id} icon={item.icon} title={item.title} year={item.year} desc={item.desc} />
               )
             }
-          })}        </div>
+          })}        
+        </div>
 
       </div>
     </section>

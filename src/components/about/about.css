@@ -65,7 +65,7 @@
 
 .skills__percentage{
     display: block;
-    background-color: var(--first-color);
+    background-color: var(--primary-color);
 }
 
 .development{
