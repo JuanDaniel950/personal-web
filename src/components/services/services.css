@@ -42,5 +42,16 @@
 }
 
 .services__description{
-    color: var(--text-color-light);
+    color: #fff;
 }
+
+.services__card:nth-child(2) .services__title{
+color: var(--title-color);
+}
+
+.services__card:nth-child(2) .services__description{
+color: var(--text-color);
+}
+
+
+
