@@ -5,17 +5,23 @@ export const Portfolio = () => {
   
   // eslint-disable-next-line no-unused-vars
   const [items, setItems] = useState(Menu);
+  const filtersItem = (category) => {
+    const newItems = Menu.filter((curElem) => {
+      return curElem.category === category;
+    });
+    setItems(newItems);
+  }
   return (
     <section className="work container section" id='work'>
     <h2 className="section__title">
       Trabajos Recientes
     </h2>
     <div className="work__filters">
-      <span className="work__item" >Everything</span>
-      <span className="work__item" >Creative</span>
-      <span className="work__item" >Art</span>
-      <span className="work__item" >Desing</span>
-      <span className="work__item" >Branding</span>
+      <span className="work__item" onClick={()=>setItems(Menu)}>Everything</span>
+      <span className="work__item" onClick={()=>filtersItem("Creative")} >Creative</span>
+      <span className="work__item"  onClick={()=>filtersItem("Art")}>Art</span>
+      <span className="work__item" onClick={()=>filtersItem("Design")}>Design</span>
+      <span className="work__item" onClick={()=>filtersItem("Branding")} >Branding</span>
     </div>
 
     <div className="work__container grid">
