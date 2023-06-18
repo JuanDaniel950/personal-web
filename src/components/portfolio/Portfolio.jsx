@@ -12,7 +12,7 @@ export const Portfolio = () => {
     setItems(newItems);
   }
   return (
-    <section className="work container section" id='work'>
+    <section className="portfolio work container section" id='portfolio'>
     <h2 className="section__title">
       Trabajos Recientes
     </h2>
