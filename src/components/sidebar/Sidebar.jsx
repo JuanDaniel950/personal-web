@@ -3,11 +3,16 @@ import "./sidebar.css";
 import logo from "../../assets/logo.svg";
 
 export const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState('');
   const [activeSection, setActiveSection] = useState('');
 
   const handleItemClick = (item) => {
     setActiveItem(item);
+  }
+
+  const showMenu = () => {
+    setIsOpen(!isOpen);
   }
 
 
@@ -36,7 +41,9 @@ export const Sidebar = () => {
 
   return (
     <>
-    <aside className='aside'>
+    <aside className={
+      isOpen ? "aside show-menu" : "aside "
+    }>
       <a href='#home' className='nav__logo'>
         <img src={logo} alt='' />
       </a>
@@ -86,7 +93,7 @@ export const Sidebar = () => {
         <span className="copyright"> © 2023</span>
       </div>
     </aside>
-    <div className="nav__toggle">
+    <div className={isOpen ? "nav__toggle nav__toggle-open" : "nav__toggle"} onClick={() => showMenu()}>
       <i className="icon-menu"></i>
     </div>
     </>
