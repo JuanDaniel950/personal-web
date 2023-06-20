@@ -35,6 +35,7 @@ export const Sidebar = () => {
 
 
   return (
+    <>
     <aside className='aside'>
       <a href='#home' className='nav__logo'>
         <img src={logo} alt='' />
@@ -85,6 +86,10 @@ export const Sidebar = () => {
         <span className="copyright"> © 2023</span>
       </div>
     </aside>
+    <div className="nav__toggle">
+      <i className="icon-menu"></i>
+    </div>
+    </>
   )
 }
 
